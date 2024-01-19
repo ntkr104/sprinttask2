@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Список друзей</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #e9ebef; }
+  .container { max-width: 1200px; margin: 20px auto; background: #fff; display: flex; }
+  .sidebar { width: 200px; background: #f5f6f7; padding: 20px; box-sizing: border-box; }
+  .sidebar-menu { list-style: none; padding: 0; }
+  .sidebar-menu li { padding: 10px 0; border-bottom: 1px solid #d3d6db; }
+  .sidebar-menu li a { color: #2a5885; text-decoration: none; }
+  
+  .friends-list { flex-grow: 1; padding: 20px; }
+  .friend { display: flex; align-items: center; margin-bottom: 10px; padding: 10px; background: #f5f6f7; }
+  .friend img { border-radius: 50%; margin-right: 10px; }
+  .friend-name { font-weight: bold; }
+  .friend-school { color: #777; font-size: 0.85em; }
+  
+  .suggestions { width: 300px; background: #f5f6f7; padding: 20px; box-sizing: border-box; }
+  .suggestion { display: flex; align-items: center; margin-bottom: 10px; }
+  .suggestion img { border-radius: 50%; margin-right: 10px; }
+  .suggestion-info { display: flex; flex-direction: column; }
+  .suggestion-name { font-weight: bold; }
+  .suggestion-mutual { color: #777; font-size: 0.85em; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <ul class="sidebar-menu">
+          <li><a href="#">Моя страница</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Сообщения</a></li>
+          <li><a href="#">Друзья</a></li>
+          <li><a href="#">Группы</a></li>
+          <li><a href="#">Фотографии</a></li>
+          <li><a href="#">Музыка</a></li>
+          <li><a href="#">Видео</a></li>
+          <!-- Дополнительные пункты меню -->
+          <li><a href="#">Игры</a></li>
+          <li><a href="#">Приложения</a></li>
+          <li><a href="#">Маркет</a></li>
+          <li><a href="#">Работа</a></li>
+          <li><a href="#">Ещё</a></li>
+        </ul>
+      </div>
+  
+      <div class="friends-list">
+        <!-- Друг 1 -->
+        <div class="friend">
+          <img src="path_to_image1.jpg" alt="Имя Друга 1" width="50" height="50">
+          <div>
+            <div class="friend-name">Имя Друга 1</div>
+            <div class="friend-school">Школа или место работы Друга 1</div>
+          </div>
+        </div>
+      
+        <!-- Друг 2 -->
+        <div class="friend">
+          <img src="path_to_image2.jpg" alt="Имя Друга 2" width="50" height="50">
+          <div>
+            <div class="friend-name">Имя Друга 2</div>
+            <div class="friend-school">Школа или место работы Друга 2</div>
+          </div>
+        </div>
+      
+        <!-- Друг 3 -->
+        <div class="friend">
+          <img src="path_to_image3.jpg" alt="Имя Друга 3" width="50" height="50">
+          <div>
+            <div class="friend-name">Имя Друга 3</div>
+            <div class="friend-school">Школа или место работы Друга 3</div>
+          </div>
+        </div>
+      
+        <!-- Добавьте больше друзей по аналогии -->
+      </div>
+      
+  
+</div>
+
+</body>
+</html>
