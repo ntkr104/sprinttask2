@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Профиль ВКонтакте</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #e9ebef; }
+  .container { max-width: 1200px; margin: 20px auto; background: #fff; }
+  .sidebar { width: 200px; float: left; background: #f5f6f7; padding: 20px; box-sizing: border-box; }
+  .profile-photo { width: 160px; height: 160px; background: #ccc; border-radius: 50%; margin-bottom: 20px; }
+  .sidebar-menu { list-style: none; padding: 0; }
+  .sidebar-menu li { padding: 10px 0; border-bottom: 1px solid #d3d6db; }
+  .sidebar-menu li a { color: #2a5885; text-decoration: none; }
+
+  .main-content { margin-left: 200px; padding: 20px; }
+  .header { background: #5b7fa6; color: #fff; padding: 20px; }
+  .header h1 { margin: 0; }
+  .info { background: #f5f6f7; padding: 20px; margin-bottom: 20px; }
+  .info p { margin: 5px 0; }
+  .friends { overflow: hidden; padding: 20px; }
+  .friend { float: left; width: 33.3333%; padding: 10px; box-sizing: border-box; text-align: center; }
+  .friend img { max-width: 100px; border-radius: 50%; margin-bottom: 10px; }
+  .friend-name { display: block; color: #2a5885; text-decoration: none; }
+  .posts { }
+  .post { background: #fff; border: 1px solid #d3d6db; margin-bottom: 20px; padding: 20px; }
+  .post img { max-width: 100%; }
+  .post-header { margin-bottom: 10px; }
+  .post-content { color: #333; }
+
+  .post-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .post-time {
+    color: #777;
+    font-size: 0.85em;
+    margin-bottom: 10px;
+  }
+
+  .post-text {
+    margin-bottom: 10px;
+  }
+
+  /* Дополнительные стили для кнопок лайков и комментариев */
+  .post-actions {
+    border-top: 1px solid #d3d6db;
+    padding-top: 10px;
+  }
+
+  .post-like, .post-comment {
+    color: #2a5885;
+    text-decoration: none;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .post-like:hover, .post-comment:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Боковая панель -->
+  <div class="sidebar">
+    <div class="profile-photo"></div>
+    <ul class="sidebar-menu">
+      <li><a href="#">Моя страница</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Сообщения</a></li>
+      <li><a href="#">Друзья</a></li>
+      <li><a href="#">Группы</a></li>
+      <li><a href="#">Фотографии</a></li>
+      <li><a href="#">Музыка</a></li>
+      <li><a href="#">Видео</a></li>
+    </ul>
+  </div>
+
+  <!-- Основное содержимое -->
+  <div class="main-content">
+    <div class="header">
+        <h1>Ильяс Жуанышев</h1>
+        <p>Life is good :)</p>
+      </div>
+      <div class="info">
+        <p>День рождения: 26 мая 1989 г.</p>
+        <p>Город: Алматы</p>
+        <p>Семейное положение: женат</p>
+        <p>Место работы: BITLAB Academy</p>
+        <p>Веб-сайт: <a href="http://www.zhuanyashev.kz" target="_blank">www.zhuanyashev.kz</a></p>
+      </div>
+    <div class="friends">
+      <div class="friend">
+        <img src="path_to_friend1.jpg" alt="Имя Друга 1">
+        <a href="#" class="friend-name">Имя Друга 1</a>
+      </div>
+      <div class="friend">
+        <img src="path_to_friend2.jpg" alt="Имя Друга 2">
+        <a href="#" class="friend-name">Имя Друга 2</a>
+      </div>
+      <div class="friend">
+        <img src="path_to_friend3.jpg" alt="Имя Друга 3">
+        <a href="#" class="friend-name">Имя Друга 3</a>
+      </div>
+      <!-- Добавьте больше друзей по аналогии -->
+    </div>
+
+    <!-- Посты -->
+    <div class="posts">
+      <div class="post">
+        <div class="post-author">Автор Поста</div>
+        <div class="post-time">Время публикации</div>
+        <div class="post-text">
+          Текст поста. Здесь можно написать что-нибудь интересное.
+        </div>
+        <div class="post-actions">
+          <a href="#" class="post-like">Лайк</a>
+          <a href="#" class="post-comment">Комментировать</a>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-author">Другой Автор</div>
+        <div class="post-time">Другое время публикации</div>
+        <div class="post-text">
+          Ещё один текст поста. Здесь также можно поделиться чем-то значимым.
+        </div>
+        <div class="post-actions">
+          <a href="#" class="post-like">Лайк</a>
+          <a href="#" class="post-comment">Комментировать</a>
+        </div>
+      </div>
+      <!-- Добавляйте посты по этому примеру -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
